@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection{
+  color: #304157;
+  background-color: #e66767;
+}
+.porfile{
+    /* height: 100vh; */
+    background-image: url(../img/0.jpg);
+    /* background-image: url(../img/backgroun-protafil.jpg); */
+    background-repeat:  no-repeat ;
+    background-size: cover;
+    background-position: bottom;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 60px 1fr 50px;
+    grid-template-areas:
+     "head head head head head head head head"
+     "cont cont cont cont cont cont cont cont" 
+     "foot foot foot foot foot foot foot foot";
+     /* padding-bottom: 20px ; */
+     /* margin-bottom: 20px ; */
+     
+}
+.hedder{
+    width: 100%;
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1b14148a;
+    position: fixed;
+
+}
+.nser {
+   
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: auto;
+    transition: .2s linear;
+  
+}
+.nser:hover{
+    color: #e66767;
+}
+.nser:hover{
+    background-color:#304157;
+    
+}
+.nav{
+  display: flex;
+  justify-content: end;
+  transition: .4s linear;
+  font-size: 20px;
+  justify-content: space-evenly;
+  width: 700px;
+
+}
+
+
+.nav a{
+  width: 100px;
+  align-self: center;
+  color: white;
+  transition: .4s linear;
+  text-align: center;
+  padding: 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid;
+  border-radius: 3px;
+}
+.nav a:hover{
+  color: #e66767;
+  border-radius: 10px 10px;
+}
+.nav a:focus{
+    color: #e66767;
+    border: 2px solid #304157;
+    border-radius: 30px;
+    background-color: #304157;
+
+    
+}
+.border {
+    width: .5px;
+    height: 30px;
+    background: #bbb;
+    align-self: center;
+  }
+  /* Content Home Page */
+.content{
+    grid-area: cont;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+.more-for-me{
+    width: 455px;
+    align-self: center;
+    padding: 25px;
+
+}
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: auto;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+.TellForMe {
+    color: white;
+    opacity: .6;
+    line-height: 23px;
+
+}
+.PhotoHome{
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .7;
+    filter: grayscale(40%);
+    margin-right: 115px;
+    
+
+}
+
+
+.footer-card{
+    grid-area: foot;
+    background-color: #1b14148a; 
+    font-size: 30px;
+    color: white;
+    padding: 10px 0 0 20px;
+    transition: .4s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    border-radius: 50px 50px 1px 1px;
+    font-size: 30px;
+
+}
+.footer-card:hover{
+    background-color:#304157;
+    opacity: 1;
+
+}
+.footer-card a {
+    color: #f2f2f2;
+    width: 60px;
+    font-size: 22px;
+    transition: 0.3s linear;
+    opacity: .1;
+  }
+  .footer-card:hover a{
+    opacity: 1;
+
+}
+.footer-card a:hover {
+    color: #e66767;
+
+  }
+
+
+
+/* Start About Me */
+  .about-me {
+    background-color: rgb(242, 242, 242);
+    overflow: hidden;
+    padding: 85px 10px 20px;
+  }
+ 
+  .about-me .image {
+    float: left;
+    width: 30% ;
+    box-shadow: 6px 9px 20px 4px #2b3c56;
+  
+  }
+  
+  .about-me .image img {
+    width: 100%;
+  }
+  
+  .about-me .info {
+    float: left;
+    width: 65%;
+    margin: 1.5% 2.5% 0 2.5%;
+  }
+  
+  .about-me .info h2 {
+    margin: 20px 0 20px 40px;
+    color: #555;
+  }
+  .about-me .info >p {
+    margin: 0 0 10px 40px;
+  }
+  .about-me .info > p:last-of-type {
+    margin-top: 10px;
+  
+  }
+  .about-me .info  p {
+    line-height: 1.5;
+    color: #888;
+  }
+  .about-me .info .hobbies {
+    overflow: hidden;
+    margin: 20px 0 0 40px;
+  }
+  .about-me .info .hobbies .content {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    min-height: 100px;
+    overflow: hidden;
+  }
+  .about-me .info .hobbies .content h3{
+    color: #555;
+  }
+  .about-me .info .hobbies .content .icon {
+    float: left;
+    width: 12%;
+  }
+  .about-me .info .hobbies .content .icon i{
+    max-width: 100%;
+    padding-top: 10px;
+  }
+  .about-me .info .hobbies .content .text {
+    float: left;
+    width: 84%;
+    margin-left: 2%;
+  }
+  /* End About Me */
+  
